@@ -1,0 +1,41 @@
+simulation name: dynamic_paper_2d_wave
+--------------------------------------------------------------------------------
+number of processing elements: 1
+
+input file
+--------------------------------------------------------------------------------
+# 
+
+dimension 2
+initial_configuration 1 file m27m.txt
+model full_atomistic
+neighbor 3.0 auto
+output 2000 100
+potential lennard_jones 2.3 0.96485309 1
+select 1 ID 0
+load displacement 1 set 0 0 NULL
+select 2 ID 16448
+load displacement 2 set 0 NULL NULL
+run velocity_verlet 0.0001 80000
+
+#--------------------------------------------------------------------------------
+
+dimension is set to 2
+initial configuration is built with 16577 atoms on a domain of size 0.561162 143
+.114 0.511012 123.915 0 0
+model is built with full_atomistic style
+neighbor is initialized with auto style with 3 cut-off radius
+file update frequency is 2000 and screen update frequency is 100
+lennard_jones potential is initialized with a cut-off radius of 2.3 and 
+parameter(s) 0.964853 1
+selection 1 of style ID is created with 1 atoms 
+displacement loading of 0 0 NULL is set to selection 1
+selection 2 of style ID is created with 1 atoms 
+displacement loading of 0 NULL NULL is set to selection 2
+velocity verlet is initialized with 0.0001 timestep and 80000 total iteration
+
+velocity verlet run
+--------------------------------------------------------------------------------
+iteration total_energy kinetic_energy potential_energy temperature
+--------------------------------------------------------------------------------
+0 -52490.4 0 -52490.4 0

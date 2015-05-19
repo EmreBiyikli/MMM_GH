@@ -1,0 +1,80 @@
+simulation name: park_1d
+--------------------------------------------------------------------------------
+
+input file
+--------------------------------------------------------------------------------
+# 
+
+initial_configuration 1 1 file park_1d_initial_configuration.txt
+model full_atomistic
+select 1 surface x- 0.5
+load displacement 1 set 0 NULL NULL
+neighbor 5.0 auto
+output 1000000 10
+potential lennard_jones 2.5 0.96485309 1
+run conjugate_gradient 0.0000000000000001 1000000
+
+--------------------------------------------------------------------------------
+
+initial configuration is built with 31 atoms on a domain of size 0 33.5883 0 0 0
+ 0
+model is built with full_atomistic style
+selection 1 of style surface is created with 1 atoms 
+displacement loading of 0 NULL NULL is set to selection 1
+neighbor is initialized with auto style
+file update frequency is 1000000 and screen update frequency is 10
+lennard_jones potential is initialized with a cut-off radius of 2.5 and 
+parameter(s) 0.964853 1
+conjugate gradient is initialized with 0.1 maximum displacement 1e-016 tolerance
+ 1000000 maximum iteration
+
+conjugate gradient run
+--------------------------------------------------------------------------------
+iteration potential_energy energy_check
+--------------------------------------------------------------------------------
+0 -29.8195 0
+10 -29.8197 2.45305e-007
+20 -29.8197 1.64809e-008
+30 -29.8197 1.0447e-008
+40 -29.8197 8.27574e-009
+50 -29.8197 2.25997e-009
+60 -29.8197 1.74086e-009
+70 -29.8197 3.81238e-009
+80 -29.8197 1.54764e-009
+90 -29.8197 4.92806e-010
+100 -29.8197 1.87783e-010
+110 -29.8197 4.62566e-010
+120 -29.8197 2.54815e-010
+130 -29.8197 3.7442e-010
+140 -29.8197 1.76231e-011
+150 -29.8197 2.16564e-011
+160 -29.8197 1.13938e-011
+170 -29.8197 1.11148e-011
+180 -29.8197 5.50976e-011
+190 -29.8197 9.49925e-012
+200 -29.8197 5.94896e-013
+210 -29.8197 3.07582e-012
+220 -29.8197 4.64664e-012
+230 -29.8197 1.72349e-012
+240 -29.8197 5.58044e-013
+250 -29.8197 2.57306e-013
+260 -29.8197 5.33037e-014
+270 -29.8197 1.25691e-013
+280 -29.8197 6.77813e-014
+290 -29.8197 2.23744e-014
+300 -29.8197 1.13846e-013
+310 -29.8197 1.31614e-015
+312 -29.8197 0
+
+simulation stats
+--------------------------------------------------------------------------------
+neighbor build count: 1
+mesh build count: 0
+
+time
+--------------------------------------------------------------------------------
+simulation time: 0 h 0 m 4.71676 s 
+average parallel time: 0 h 0 m 4.11785 s (87.3024%)
+paralell time distribution (min average max): 0.873024 0.873024 0.873024
+
+-- end of simulation

@@ -1,0 +1,10 @@
+# 
+
+dimension 2
+initial_configuration 1 file rectangle_2d_initial_configuration.txt
+model full_atomistic
+neighbor 3.0 auto
+output 1000000 1
+potential lennard_jones 2.3 0.96485309 1
+run conjugate_gradient 0.000001 1000000
+

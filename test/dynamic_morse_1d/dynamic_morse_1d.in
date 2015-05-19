@@ -1,0 +1,13 @@
+# 
+
+dimension 1
+initial_configuration 63.546 file dynamic_morse_1d_initial_configuration.txt
+model full_atomistic
+select 1 surface x- 1.0
+load displacement 1 set 0 NULL NULL
+neighbor 9.0 auto
+output 100000 1
+potential morse 6.0 0.33084812 1.3588 2.866
+run velocity_verlet 0.1 10
+
+

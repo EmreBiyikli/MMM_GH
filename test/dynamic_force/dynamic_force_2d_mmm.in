@@ -1,0 +1,16 @@
+# 
+
+dimension 2
+initial_configuration 1.0 hexagonal 1.122462048309373 20.5 10.5
+mesh file dynamic_force_2d_mesh.txt
+model mmm no_ssmp
+select 1 ID 0 185
+load displacement 1 set 0 0 NULL
+select 2 ID 18 203
+load force 2 add 0.4 NULL NULL
+neighbor 3.0 auto
+output 100000 1
+potential lennard_jones 2.3 0.96485309 1
+run velocity_verlet 0.001 1000
+
+

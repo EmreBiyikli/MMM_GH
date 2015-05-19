@@ -1,0 +1,34 @@
+﻿Build started 8/6/2014 2:18:53 PM.
+     1>Project "C:\Users\eb\Desktop\googleDrive\projects\MMM201205\program\MMM_v14.6\visual_studio\VS\VS.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _CRT_SECURE_NO_WARNINGS /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\source\mmm.cc
+         mmm.cc
+     1>c:\users\eb\desktop\googledrive\projects\mmm201205\program\mmm_v14.6\source\mmm.cc(142): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\eb\desktop\googledrive\projects\mmm201205\program\mmm_v14.6\source\mmm.cc(210): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\eb\desktop\googledrive\projects\mmm201205\program\mmm_v14.6\source\mmm.cc(321): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\eb\desktop\googledrive\projects\mmm201205\program\mmm_v14.6\source\mmm.cc(465): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\eb\desktop\googledrive\projects\mmm201205\program\mmm_v14.6\source\mmm.cc(527): warning C4018: '<' : signed/unsigned mismatch
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\eb\Desktop\googleDrive\projects\MMM201205\program\MMM_v14.6\visual_studio\Debug\VS.exe" /INCREMENTAL /NOLOGO msmpi.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\eb\Desktop\googleDrive\projects\MMM201205\program\MMM_v14.6\visual_studio\Debug\VS.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\eb\Desktop\googleDrive\projects\MMM201205\program\MMM_v14.6\visual_studio\Debug\VS.lib" /MACHINE:X86 Debug\add_in.obj
+         Debug\atom_group.obj
+         Debug\build_initial_configuration.obj
+         Debug\conjugate_gradient.obj
+         Debug\input.obj
+         Debug\kdtree.obj
+         Debug\main.obj
+         Debug\mesh.obj
+         Debug\mmm.obj
+         Debug\model.obj
+         Debug\neighbor.obj
+         Debug\output.obj
+         Debug\potential.obj
+         Debug\select.obj
+         Debug\temperature.obj
+         Debug\time.obj
+         Debug\velocity_verlet.obj
+         VS.vcxproj -> C:\Users\eb\Desktop\googleDrive\projects\MMM201205\program\MMM_v14.6\visual_studio\Debug\VS.exe
+     1>Done Building Project "C:\Users\eb\Desktop\googleDrive\projects\MMM201205\program\MMM_v14.6\visual_studio\VS\VS.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.31

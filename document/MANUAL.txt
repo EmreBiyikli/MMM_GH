@@ -1,0 +1,64 @@
+General
+--------------------------------------------------------------------------------
+The MMM program is coded in an object-oriented fashion in C++. 
+
+Classes
+--------------------------------------------------------------------------------
+The whole program is packed into the top-most level class, named MMM. The 
+simulation is performed by feeding the input file into the MMM class in the 
+main function. MMM has several sub-classes. The hierarchy is as follows:
+- MMM (VV)
+-- AddIn (VV)
+-- AtomGroup (V)
+-- ConjugateGradient (VV)
+-- Input (VV)
+-- Mesh (V)
+-- Model (VV)
+-- Neighbor (V)
+-- Output (VV)
+-- Potential (VV)
+-- Select
+-- Temperature (VV)
+-- Time (VV)
+-- VelocityVerlet (VV)
+--- Matrix
+* Mediator
+* BuildInitialConfiguration
+
+The classes with a (VV) sign are visible to each other. This is accomplished by 
+inheriting all (VV) classes from the Mediator class. The classes with (V) sign 
+are visible to (VV) classes but not to other (V) classes. The reason is that 
+these (V) classes are deisgned to be independent, see discussion about 
+independency. 
+AddIn is a class for add-in functions. Add-in function are implemented in the
+add_in.cc file and controlled from the add_in.h file. 
+Matrix is a sub-sub-level class that is specialized to handle 2-D data. Some 
+classes use matrix type.
+BuildInitialConfiguration is a collection of standalone functions used for 
+building initial configurations.
+
+Detailed descriptions of classes and functions can be found in their 
+declarations and definitions.
+
+Independency
+--------------------------------------------------------------------------------
+Some classes and functions in the program are marked with the (independent) 
+label in their declaration or definition, respectively. This is to indicate 
+that the class/function is standalone and does not implicitly depend on any 
+other part of the program.
+
+Input file
+--------------------------------------------------------------------------------
+Input file format should be deduced from command functions in mmm.cc. 
+
+External dependencies
+--------------------------------------------------------------------------------
+The program has one external dependency, that is the qhull meshing sotware. The 
+executable of the software is called via system commands. It is utilized in 
+2/3-D Delaunay meshing. For further information on the software, visit  
+http://qhull.org/. 
+
+Further inquiries
+--------------------------------------------------------------------------------
+For further explanation, e-mail:
+Emre Biyikli (biyikli.emre@gmail.com)

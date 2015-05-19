@@ -1,0 +1,18 @@
+Copyright (C) 2011-2014 University of Pittsburgh. All rights reserved.
+ 
+Any person who obtained a copy of this software and associated files cannot 
+(in part or whole) copy, modify, merge, publish, distribute, sublicense and/or 
+sell the software. The software is for only inspection and use (without 
+modification and non-commercial) purposes. 
+
+The software is provided "as is", without warranty of any kind, express or 
+implied, including but not limited to the warranties of merchantability, 
+fitness for a particular purpose and noninfringement. In no event shall the 
+authors or copyright holders be liable for any claim, damage or other 
+liability, whether in an action of contract, tort or otherwise, arising from, 
+out of or in connection with the software or the use or other dealing in the 
+software.
+
+For further inquiries, contact:
+Emre Biyikli (biyikli.emre@gmail.com)
+Albert C. To (albertto@pitt.edu)

@@ -1,0 +1,13 @@
+# 
+
+dimension 1
+initial_configuration 1 file park_1d_initial_configuration.txt
+select 1 surface x- 0.5
+load displacement 1 set 0 NULL NULL
+model full_atomistic
+neighbor 5.0 auto
+output 1000000 1
+potential lennard_jones 2.5 0.96485309 1
+run conjugate_gradient 0.0000000000000001 100000000
+
+

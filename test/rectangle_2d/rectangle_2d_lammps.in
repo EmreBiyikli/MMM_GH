@@ -1,0 +1,19 @@
+#
+	
+atom_style      atomic
+units           metal
+boundary        f f f
+	                
+read_data       rectd2x0lammps.txt
+                
+newton on
+pair_style      lj/cut 2.3 
+pair_coeff      * * 1 1
+                              
+neighbor        0.7 bin
+
+thermo 	1
+
+minimize 0.00000001 0.00000001 10000 10000
+
+

@@ -1,0 +1,15 @@
+# 
+
+dimension 2
+initial_configuration 1 file m27m.txt
+model full_atomistic
+neighbor 3.0 auto
+output 2000 100
+potential lennard_jones 2.3 0.96485309 1
+select 1 ID 0
+load displacement 1 set 0 0 NULL
+select 2 ID 16448
+load displacement 2 set 0 NULL NULL
+run velocity_verlet 0.0001 80000
+
+#

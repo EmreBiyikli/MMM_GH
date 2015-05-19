@@ -1,0 +1,16 @@
+# 
+
+dimension 1
+initial_configuration 1.0 uniform 1.122462048309373 20.5
+mesh file dynamic_force_1d_mesh.txt
+model mmm no_ssmp
+select 1 surface x- 0.5
+load displacement 1 set 0 NULL NULL
+select 2 surface x+ 0.5
+load force 2 add 0.4 NULL NULL
+neighbor 5.0 auto
+output 100000 1
+potential lennard_jones 2.3 0.96485309 1
+run velocity_verlet 0.001 1000
+
+
